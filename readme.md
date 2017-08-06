@@ -1,6 +1,6 @@
-HackTJ 2017
+HackTJ 2018
 ===========
-The website for HackTJ 2017, held on March 25th-26th, 2017.
+The website for HackTJ 2018, held on March 10th-11th, 2018.
 
 Setup
 -----
