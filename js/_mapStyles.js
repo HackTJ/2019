@@ -4,7 +4,7 @@ window.hacktjMapStyles = [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#8064A2"
+                "color": "#080938"
             },
             {
                 "lightness": "42"
