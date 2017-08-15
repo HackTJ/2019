@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6{
 	width: 100%;
 	min-height: 30px;
 	line-height: 30px;
-	padding: 5px;
+	padding: 10px;
 }
 
 /************************************
@@ -372,10 +372,18 @@ p.large{
 *	Hero Section					*
 *************************************/
 section.hero{
+	.background-image{
+		position: absolute;
+		top: 0;
+		left:-5px;
+		height: 100%;
+		width: calc(100% + 10px);
+		filter: brightness(120%) hue-rotate(130deg) blur(1px);
+	}
 	.social-links{
 		position: absolute;
 		top: -15px;
-		left: 0px;
+		left: 0;
 		.social{
 			font-size: 22px;
 			margin: 20px;
@@ -399,10 +407,12 @@ section.hero{
 	padding-top: 5%;
 	position: relative;
 
-	// @include linear-gradient-image(#fff, #222, '../img/monticello.png');
-	background-image: url(../img/bkg.png);
-	background-size: cover;
-	background-position: center top;
+	overflow-x:hidden;
+
+	 //@include linear-gradient-image(#fff, #222, '../img/monticello.png');
+	//background-image: url(../img/bkg2.png);
+	//background-size: cover;
+	//background-position: center top;
 
 	// video.background{
 	// 	position: absolute;
