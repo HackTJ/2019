@@ -1,5 +1,6 @@
 $base-font-size: 14px;
 $hacktj-primary: #080938;
+$hacktj-lighten: lighten($hacktj-primary,15%);
 $text-color: #333333;
 $line-width: 7px;
 $green: #68bb68;
@@ -15,8 +16,11 @@ $header-family: "Roboto", sans-serif;
 @import "mixins";
 @import "fonts";
 
+html{
+    min-height: 100%;
+}
 body {
-	@include linear-gradient(#82A3D5,$hacktj-primary);
+	@include linear-gradient($hacktj-lighten,$hacktj-primary);
 	font-family: $body-family;
 	font-weight: 500;
 	color: white;
@@ -98,6 +102,12 @@ button, .button {
 	&.relative{
 		position: relative;
 		margin-top: 20px;
+        &.history{
+            padding-bottom:100px;
+            @include respond-to("mobile"){
+	            padding-bottom: 200px;
+            }
+        }
 	}
 	&:not(.relative){
 		position: absolute;
@@ -128,6 +138,48 @@ button, .button {
 			margin: 0px auto 0;
 		}
 	}
+    .history-section{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        .action-section{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: start;
+            width:70%;
+            margin:20px auto;
+            
+            @include respond-to("mobile"){
+		        justify-content:center;	
+            }
+
+            img{
+                background: white;
+                padding:10px;
+                height:200px;
+                width: 200px;
+            }
+            .info-container{
+                text-align:left;
+                background: white;
+                padding:10px;
+                margin: 0 5vw;
+                
+                @include respond-to("mobile"){
+		            text-align:center;	
+                }
+
+                .section-title{
+                    font-size: 1.7em;
+                }
+                .section-year{
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
 	.action-section{
 		background: white;
 		color: #333;
@@ -228,7 +280,7 @@ button, .button {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 8%;
+	bottom: 2%;
 	margin: 0 auto;
 	padding-top: 30px;
 	width: 410px;

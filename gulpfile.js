@@ -15,7 +15,7 @@ var concat = require('gulp-concat');
 var githubPages = require("gulp-gh-pages");
 var gulp = require('gulp');
 var http = require('node-static');
-var jade = require('gulp-jade');
+var pug = require('gulp-pug');
 var livereload = require('gulp-livereload');
 var minifyIMG = require('gulp-imagemin')
 var minifyJS = require('gulp-uglify')
@@ -38,8 +38,8 @@ compiler.clean = function(cb) {
 compiler.html = function() {
 	console.log('Compiling HTML...');
 	var deferred = when.defer();
-    gulp.src('./jade/[!_]*.jade')
-        .pipe(jade())
+    gulp.src('./pug/[!_]*.pug')
+        .pipe(pug())
         .pipe(gulp.dest('./out'))
         .pipe(livereload())
         .on('end', function(){
@@ -170,7 +170,7 @@ gulp.task('watch', ['default'], function() {
     gulp.watch('./static/**', ['static']);
     gulp.watch('./scss/**/*.scss', ['css']);
     gulp.watch('./js/**/*.js', ['js'])
-    gulp.watch('./jade/*.jade', ['html']);
+    gulp.watch('./pug/*.pug', ['html']);
 
     console.log("Server listening on port %s", port)
 });
