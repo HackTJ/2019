@@ -1,6 +1,6 @@
 $base-font-size: 14px;
 $hacktj-primary: #080938;
-$hacktj-lighten: lighten($hacktj-primary,15%);
+$hacktj-lighten: lighten($hacktj-primary,5%);
 $text-color: #333333;
 $line-width: 7px;
 $green: #68bb68;
@@ -147,8 +147,7 @@ button, .button {
             display:flex;
             flex-direction:row;
             flex-wrap: wrap;
-            justify-content: start;
-            width:70%;
+            justify-content: center;
             margin:20px auto;
             
             @include respond-to("mobile"){
@@ -183,7 +182,7 @@ button, .button {
 	.action-section{
 		background: white;
 		color: #333;
-		width: 70%;
+		// width: 70%;
 		@include respond-to("mobile"){
 			width: 90%;
 			font-size: 1.2em;
