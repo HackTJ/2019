@@ -1,4 +1,29 @@
+var logos = "img/2017-sponsor-logos/";
+var partnerlogos = "img/partner-logos/";
+var smalllogos = "img/sponsor-logos-small/";
+
+var sponsorImages = ['appian.png', 'apt.png', 'big nerd ranch.png', 'bigparser.png', 'bizy.png', 'capital one.png', 'catapult.png', 'fannie mae.png', 'glorecontech.png', 'jabil kuatro.png', 'miner and kasch.png', 'mongodb.png', 'ntrepidlogo.png', 'palantir.png', 'phone 2 action.png', 'razorx2.png', 'yext.png'];
+var partnerImages = ['make school.png', 'mlh.png']
+
+addImages();
+
+// window.location.reload(true)
 // Helpers
+function addImages(){
+  var sponsordivs = document.getElementsByClassName("sponsor-container");
+  var str = "";
+  for(s in sponsorImages){
+    console.log(s);
+    str += "<img src='"+ logos + sponsorImages[s] +"'></img>";
+  }
+  sponsordivs[0].innerHTML = str;
+  str = "";
+  for(s in partnerImages){
+    console.log(s);
+    str += "<img src='"+ partnerlogos + partnerImages[s] +"'></img>";
+  }
+  sponsordivs[1].innerHTML = str;
+}
 function hasClass(el, className) {
   if (!el) return false;
   if (el.classList)
@@ -90,26 +115,26 @@ for(var i=0; i<questions.length; i++){
   group.addEventListener("click", openQuestion(group, questions[i], answer))
 }
 
-function initializeMap() {
-  var hacktjStyle = new google.maps.StyledMapType(window.hacktjMapStyles, {name: "HackTJ Website"});
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: isMobile ? {lat: 38.819, lng: -77.189} : {lat: 38.819, lng: -77.209},
-    scrollwheel: false,
-    navigationControl: false,
-    mapTypeControl: false,
-    scaleControl: false,
-    draggable: false,
-  });
-  map.mapTypes.set('hacktj', hacktjStyle);
-  map.setMapTypeId('hacktj');
+// function initializeMap() {
+//   var hacktjStyle = new google.maps.StyledMapType(window.hacktjMapStyles, {name: "HackTJ Website"});
+//   var map = new google.maps.Map(document.getElementById('map'), {
+//     zoom: 12,
+//     center: isMobile ? {lat: 38.819, lng: -77.189} : {lat: 38.819, lng: -77.209},
+//     scrollwheel: false,
+//     navigationControl: false,
+//     mapTypeControl: false,
+//     scaleControl: false,
+//     draggable: false,
+//   });
+//   map.mapTypes.set('hacktj', hacktjStyle);
+//   map.setMapTypeId('hacktj');
 
-  var marker = new google.maps.Marker({
-    position: {lat: 38.818086, lng: -77.168323},
-    map: map
-  });
-}
-google.maps.event.addDomListener(window, 'load', initializeMap);
+//   var marker = new google.maps.Marker({
+//     position: {lat: 38.818086, lng: -77.168323},
+//     map: map
+//   });
+// }
+// google.maps.event.addDomListener(window, 'load', initializeMap);
 
 // ScrollMagic Code
 if(!isMobile){
@@ -165,28 +190,6 @@ if(!isMobile){
         });
 }
 
-var sponsorSmallImages = {
-  "Ntrepid Corporation": "img/sponsor-logos-small/ntrepid.png",
-  "Universal Consulting Services": "img/sponsor-logos-small/ucs.png",
-  "Pebble": "img/sponsor-logos-small/pebble.png",
-  "Coding Lady Colonials": "img/sponsor-logos-small/clc.png",
-  "Major League Hacking": "img/sponsor-logos-small/mlh.png",
-  "Yext": "img/sponsor-logos-small/yext.png",
-  "Capital One": "img/sponsor-logos-small/capone.png",
-  "KPCB Fellows Program": "img/sponsor-logos-small/kpcb.png",
-  "MongoDB": "img/sponsor-logos-small/mongodb.png",
-  "RazorX2": "img/sponsor-logos-small/razorx2.png",
-  "Real Thread": "img/sponsor-logos-small/realthread.png",
-  "Filestack": "img/sponsor-logos-small/filestack.png",
-  "L'Oréal USA": "img/sponsor-logos-small/loreal.png",
-  "Palantir": "img/sponsor-logos-small/palantir.png",
-  "OpsClick": "img/sponsor-logos-small/opsclick.png",
-  "BigParser": "img/sponsor-logos-small/bigparser.png",
-  "TIC Camp": "img/sponsor-logos-small/tic.png",
-  "MIT Launch": "img/sponsor-logos-small/mitlaunch.png",
-  "Phone2Action": "img/sponsor-logos-small/phone2action.png"
-}
-
 function setImages(count){
   var doneImages = [];
   setTimeout(function(){
@@ -206,4 +209,4 @@ function setImages(count){
     }
   }, 500);
 }
-setImages(0);
+// setImages(0);
