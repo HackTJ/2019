@@ -67,13 +67,13 @@ compiler.css = function() {
 compiler.js = function() {
 	console.log('Compiling JS...');
 	var main = when.defer();
-    gulp.src(['./js/__*.js', './js/_*.js', './js/main.js'])
+    gulp.src(['./js/image.js','./js/__*.js', './js/_*.js', './js/main.js'])
         .pipe(concat('main.js'))
         .pipe(minifyJS())
         .pipe(gulp.dest('./out/js'))
         .on('end', function(){
         	main.resolve();
-        });
+    });
     var upload = when.defer();
     gulp.src('./js/upload.js')
         .pipe(minifyJS())
@@ -81,7 +81,14 @@ compiler.js = function() {
         .on('end', function(){
             upload.resolve();
         });
-    return when.all([main, upload]).promise;
+    var hackathon = when.defer();
+    gulp.src(['./js/hackathonsList.js','./js/hackathons.js'])
+        .pipe(minifyJS())
+        .pipe(gulp.dest('./out/js'))
+        .on('end', function(){
+            hackathon.resolve();
+    });
+    return when.all([main, upload, hackathon]).promise;
 }
 
 // Compile static resources

@@ -103,10 +103,7 @@ button, .button {
 		position: relative;
 		margin-top: 20px;
         &.history{
-            padding-bottom:100px;
-            @include respond-to("mobile"){
-	            padding-bottom: 200px;
-            }
+            padding-bottom:150px;
         }
 	}
 	&:not(.relative){
@@ -152,6 +149,48 @@ button, .button {
             
             @include respond-to("mobile"){
 		        justify-content:center;	
+            }
+
+            img{
+                background: white;
+                padding:10px;
+                height:200px;
+                width: 200px;
+            }
+            .info-container{
+                text-align:left;
+                background: white;
+                padding:10px;
+                margin: 0 5vw;
+                
+                @include respond-to("mobile"){
+		            text-align:center;	
+                }
+
+                .section-title{
+                    font-size: 1.7em;
+                }
+                .section-year{
+                    font-size: 1.4em;
+                }
+            }
+        }
+	}
+	.nearby-section{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        .action-section{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+			justify-content: center;
+            margin:20px auto;
+            
+            @include respond-to("mobile"){
+				justify-content:center;	
+				max-width: 100vw;
             }
 
             img{
@@ -279,7 +318,7 @@ button, .button {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 2%;
+	bottom: 50px;
 	margin: 0 auto;
 	padding-top: 30px;
 	width: 410px;
