@@ -10,13 +10,11 @@ function addImages(){
   var sponsordivs = document.getElementsByClassName("sponsor-container");
   var str = "";
   for(s in sponsorImages){
-    console.log(s);
     str += "<img src='"+ logos + sponsorImages[s] +"'></img>";
   }
   sponsordivs[0].innerHTML = str;
   str = "";
   for(s in partnerImages){
-    console.log(s);
     str += "<img src='"+ partnerlogos + partnerImages[s] +"'></img>";
   }
   sponsordivs[1].innerHTML = str;
@@ -112,26 +110,26 @@ for(var i=0; i<questions.length; i++){
   group.addEventListener("click", openQuestion(group, questions[i], answer))
 }
 
-// function initializeMap() {
-//   var hacktjStyle = new google.maps.StyledMapType(window.hacktjMapStyles, {name: "HackTJ Website"});
-//   var map = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 12,
-//     center: isMobile ? {lat: 38.819, lng: -77.189} : {lat: 38.819, lng: -77.209},
-//     scrollwheel: false,
-//     navigationControl: false,
-//     mapTypeControl: false,
-//     scaleControl: false,
-//     draggable: false,
-//   });
-//   map.mapTypes.set('hacktj', hacktjStyle);
-//   map.setMapTypeId('hacktj');
+function initializeMap() {
+  var hacktjStyle = new google.maps.StyledMapType(window.hacktjMapStyles, {name: "HackTJ Website"});
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: isMobile ? {lat: 38.819, lng: -77.189} : {lat: 38.819, lng: -77.209},
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,
+  });
+  map.mapTypes.set('hacktj', hacktjStyle);
+  map.setMapTypeId('hacktj');
 
-//   var marker = new google.maps.Marker({
-//     position: {lat: 38.818086, lng: -77.168323},
-//     map: map
-//   });
-// }
-// google.maps.event.addDomListener(window, 'load', initializeMap);
+  var marker = new google.maps.Marker({
+    position: {lat: 38.818086, lng: -77.168323},
+    map: map
+  });
+}
+google.maps.event.addDomListener(window, 'load', initializeMap);
 
 // ScrollMagic Code
 if(!isMobile){
