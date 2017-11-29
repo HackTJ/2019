@@ -88,7 +88,14 @@ compiler.js = function() {
         .on('end', function(){
             hackathon.resolve();
     });
-    return when.all([main, upload, hackathon]).promise;
+    var team = when.defer();
+    gulp.src(['./js/team.js'])
+        .pipe(minifyJS())
+        .pipe(gulp.dest('./out/js'))
+        .on('end', function(){
+            hackathon.resolve();
+    });
+    return when.all([main, upload, hackathon, team]).promise;
 }
 
 // Compile static resources
