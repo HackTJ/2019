@@ -1,6 +1,6 @@
-var logos = "img/2017-sponsor-logos/";
-var partnerlogos = "img/partner-logos/";
-var smalllogos = "img/sponsor-logos-small/";
+var logos = "img/logos/";
+var partnerlogos = "img/logos2/";
+// var smalllogos = "img/sponsor-logos-small/";
 
 
 
@@ -15,7 +15,7 @@ function setupNav(){
   });
 }
 function addImages(){
-  var sponsordivs = document.getElementsByClassName("sponsor-container");
+  var sponsordivs = document.getElementsByClassName("partner-container");
   var str = "";
   for(s in sponsorImages){
     str += "<img src='"+ logos + sponsorImages[s] +"'></img>";
