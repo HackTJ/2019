@@ -35,198 +35,277 @@
                 .event-location Thomas Jefferson High School for Science and Technology
                 .register-button-block.top
                     a.button.register-button.mentor(href="/history") Past Projects
-                    //- a.button.register-button.mentor(href="/team") Meet the Team
                     a.button.register-button.mentor(href="/nearby") Nearby Hackathons
                     //- a.button.register-button.mentor(href="https://docs.google.com/document/d/1tpKCwFMMnfmqwV9El9HzXhN3oTeAQpH_LkFcxKCT43Y/edit?usp=sharing", target="_blank") Schedule
                     //- a.button.register-button.mentor(href="/submit", target="_blank") Submit Hack
                     //- a.button.register-button.mentor(href="/mentors", target="_blank") Request Mentor
-        section.intro
-            .container
-                .animation-container.vertical.left.top.extra-height#trigger
-                    .animated
-                p.large Ever wanted to build the next Snapchat? Program a drone? Build a website that connects people across the globe? Come to HackTJ and work with your friends to build something cool, learn new tricks, and have a fantastic time!
+        navcontainer
+            nav
+                img(src="/img/logo.png")
+                a(href="#intro")
+                    h1 Intro
+                a(href="#faq")
+                    h1 FAQ
+                a(href="#sponsor")
+                    h1 Sponsors
+                a(href="#schedule")
+                    h1 Schedule
+                a(href="#team")
+                    h1 Team
+                a(href="#map")
+                    h1 Map
 
-        section.red.faq
-            .container
-                .animation-container.vertical.left.top
-                    .animated.white
-                .header-row
-                    .animation-container.horizontal.left-side
-                        .animated.left.white
-                    h1.section-title FAQ
-                    .animation-container.horizontal.right-side
-                        .animated.left.white
-                ul.faq-container
-                    //- General Questions
-                    .row
-                        li.question-group
-                            h3.question What is HackTJ?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p HackTJ is a student-run hackathon at TJHSST, where you will have 24 hours to learn how to code and/or work with your friends to make your idea come to life.
-                        li.question-group
-                            h3.question When is HackTJ?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p HackTJ will start on Saturday, March 10 and run until Sunday, March 11. If you need to arrive late or leave early, please <a href="mailto:hello@hacktj.org">let us know</a> ahead of time.
-                        li.question-group
-                            h3.question Who can attend?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p HackTJ is open to any and all current high school students. If you're not a high school student but would like to attend, consider coming as a mentor or volunteer.
-                    //- Registration Questions
-                    .row
-                        li.question-group
-                            h3.question Is there any cost?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p Nope! Thanks to our sponsors, HackTJ is completely free!
-                        li.question-group
-                            h3.question Is there a deadline?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p Yes. Registration will be closed on March 20th, but don't worry about that – go ahead and register now!
-                        li.question-group
-                            h3.question.small Do you have a code of conduct?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p Yes, good question! We have adopted the <a href="https://hacktj.org/conduct.pdf" target="_blank">MLH code of conduct</a>, which all attendees will be required to adhere to. 
-                    //- Hacking Questions
-                    .row
-                        li.question-group
-                            h3.question Isn't hacking illegal?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p In the context of a hackathon, "hacking" is to build a real application over the length of the event. It's important to not confuse this with illegal hacking, which is gaining unauthorized access to a computer. 
-                        li.question-group
-                            h3.question Do I need a team?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p If you already have a team of 2-4 people you want to work with, that's awesome! If not don't worry because we'll have an opportunity for people to join a team if they need one.
-                        li.question-group
-                            h3.question.small What if I don't know how to code?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p Come to HackTJ! Coding is fun, creative, and an important skill, and HackTJ is the perfect way to learn. We'll have workshops and mentors to help guide you. 
-                    //- Food and supplies questions
-                    .row
-                        li.question-group
-                            h3.question What should I bring?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p You'll need to bring your laptop, phone, chargers, a sleeping bag/pillow, toiletries, and extra clothing. We suggest you bring a set of nice clothes for demos; you'll want to make the best impression.
-                        li.question-group
-                            h3.question Will there be food?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p Yes. Lots and lots of food.
-                        li.question-group
-                            h3.question.small What if I have dietary concerns?
-                                .icon.icon-plus
-                                .icon.icon-close
-                            .answer: p We'll be providing meals for most everyone at HackTJ, but if you have special concerns please <a href="mailto:hello@hacktj.org">let us know</a>.
-                p.large If your question is not answered here, just ask us: <a href="mailto:hello@hacktj.org">hello@hacktj.org</a>.
-                .animation-container.vertical.right.bottom
+            a.anchor#intro
+            section.intro
+                .container
+                    .animation-container.vertical.left.top.extra-height#trigger
+                        .animated
+                    p.large Ever wanted to build the next Snapchat? Program a drone? Build a website that connects people across the globe? Come to HackTJ and work with your friends to build something cool, learn new tricks, and have a fantastic time!
+            
+            a.anchor#faq
+            section.red.faq
+                .container
+                    .animation-container.vertical.left.top
                         .animated.white
-        section.sponsors
-            .container
-                .animation-container.vertical.top.right.extra-right.extra-height
-                    .animated
-                h1.section-title Past Sponsors
-                .sponsor-container
-                    //- script(async src = "//widgets.nvite.com/1.6/cards.js" data-resource="3j7dml/sponsors")
-                    //- script(async src="//widgets.nvite.com/1.1/cards.js" data-resource="hacktjmentorvolunteers/sponsors")
+                    .header-row
+                        .animation-container.horizontal.left-side
+                            .animated.left.white
+                        h1.section-title FAQ
+                        .animation-container.horizontal.right-side
+                            .animated.left.white
+                    ul.faq-container
+                        //- General Questions
+                        .row
+                            li.question-group
+                                h3.question What is HackTJ?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p HackTJ is a student-run hackathon at TJHSST, where you will have 24 hours to learn how to code and/or work with your friends to make your idea come to life.
+                            li.question-group
+                                h3.question When is HackTJ?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p HackTJ will start on Saturday, March 10 and run until Sunday, March 11. If you need to arrive late or leave early, please <a href="mailto:hello@hacktj.org">let us know</a> ahead of time.
+                            li.question-group
+                                h3.question Who can attend?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p HackTJ is open to any and all current high school students. If you're not a high school student but would like to attend, consider coming as a mentor or volunteer.
+                        //- Registration Questions
+                        .row
+                            li.question-group
+                                h3.question Is there any cost?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p Nope! Thanks to our sponsors, HackTJ is completely free!
+                            li.question-group
+                                h3.question Is there a deadline?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p Yes. Registration will be closed on March 20th, but don't worry about that – go ahead and register now!
+                            li.question-group
+                                h3.question.small Do you have a code of conduct?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p Yes, good question! We have adopted the <a href="https://hacktj.org/conduct.pdf" target="_blank">MLH code of conduct</a>, which all attendees will be required to adhere to. 
+                        //- Hacking Questions
+                        .row
+                            li.question-group
+                                h3.question Isn't hacking illegal?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p In the context of a hackathon, "hacking" is to build a real application over the length of the event. It's important to not confuse this with illegal hacking, which is gaining unauthorized access to a computer. 
+                            li.question-group
+                                h3.question Do I need a team?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p If you already have a team of 2-4 people you want to work with, that's awesome! If not don't worry because we'll have an opportunity for people to join a team if they need one.
+                            li.question-group
+                                h3.question.small What if I don't know how to code?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p Come to HackTJ! Coding is fun, creative, and an important skill, and HackTJ is the perfect way to learn. We'll have workshops and mentors to help guide you. 
+                        //- Food and supplies questions
+                        .row
+                            li.question-group
+                                h3.question What should I bring?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p You'll need to bring your laptop, phone, chargers, a sleeping bag/pillow, toiletries, and extra clothing. We suggest you bring a set of nice clothes for demos; you'll want to make the best impression.
+                            li.question-group
+                                h3.question Will there be food?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p Yes. Lots and lots of food.
+                            li.question-group
+                                h3.question.small What if I have dietary concerns?
+                                    .icon.icon-plus
+                                    .icon.icon-close
+                                .answer: p We'll be providing meals for most everyone at HackTJ, but if you have special concerns please <a href="mailto:hello@hacktj.org">let us know</a>.
+                    p.large If your question is not answered here, just ask us: <a href="mailto:hello@hacktj.org">hello@hacktj.org</a>.
+                    .animation-container.vertical.right.bottom
+                            .animated.white
+            a.anchor#sponsor
+            section#sponsors
+                .container
+                    .animation-container.vertical.top.right.extra-right.extra-height
+                        .animated
+                    h1.section-title Past Sponsors
+                    .sponsor-container
+                        //- script(async src = "//widgets.nvite.com/1.6/cards.js" data-resource="3j7dml/sponsors")
+                        //- script(async src="//widgets.nvite.com/1.1/cards.js" data-resource="hacktjmentorvolunteers/sponsors")
 
-                p.large Can't see our sponsors? Try disabling ad block for this page.
-                h1.section-title Past Partners
-                .sponsor-container
-                    //- script(async src="//widgets.nvite.com/1.6/cards.js" data-resource="c8b8/speakers")
-                    //- script(async src="//widgets.nvite.com/1.1/cards.js" data-resource="hacktjstudents/sponsors")
-                    //- a(href="https://mlh.io" target="_blank")
-                    //-     img.partner-image(src="img/mlh.png")
-                    //- a(href="https://tjclc.wordpress.com" target="_blank")
-                    //-     img.partner-image(src="img/clc.png")
-                p.large Interested in sponsoring? Email us at <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a>.
+                    p.large Can't see our sponsors? Try disabling ad block for this page.
+                    h1.section-title Past Partners
+                    .sponsor-container
+                        //- script(async src="//widgets.nvite.com/1.6/cards.js" data-resource="c8b8/speakers")
+                        //- script(async src="//widgets.nvite.com/1.1/cards.js" data-resource="hacktjstudents/sponsors")
+                        //- a(href="https://mlh.io" target="_blank")
+                        //-     img.partner-image(src="img/mlh.png")
+                        //- a(href="https://tjclc.wordpress.com" target="_blank")
+                        //-     img.partner-image(src="img/clc.png")
+                    p.large Interested in sponsoring? Email us at <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a>.
 
-        .animation-container.horizontal.sponsors
-            .animated.right
-        section.schedule#schedule
-            .container
-                .animation-container.vertical.top.left.extra-height
+            .animation-container.horizontal.sponsors
+                .animated.right
+            
+            a.anchor#schedule
+            section.schedule#schedules
+                .container
+                    .animation-container.vertical.top.left.extra-height
+                        .animated
+                    h1.section-title Schedule (TBD)
+                    h1.section-title Last Year's Schedule
+                    ul.day
+                        .day-title
+                            h3 Saturday, March 10
+                            .animation-container.horizontal.line-schedule
+                                .animated.left
+                        li.item
+                            h6.time 1:00pm
+                            .description Registration Opens
+                        li.item
+                            h6.time 2:00pm
+                            .description Opening Ceremony
+                        li.item
+                            h6.time 3:00pm
+                            .description Hacking Starts
+                        li.item
+                            h6.time 4pm-9pm
+                            .description Workshops
+                        li.item
+                            h6.time 6:30pm
+                            .description Dinner 
+                    ul.day
+                        .day-title
+                            h3 Sunday, March 11
+                            .animation-container.horizontal.line-schedule
+                                .animated.left
+                        li.item
+                            h6.time 12:00am
+                            .description Midnight Snack
+                        li.item
+                            h6.time 7:30am
+                            .description Breakfast
+                        li.item
+                            h6.time 12:00pm
+                            .description Hacking Ends / Lunch
+                        li.item
+                            h6.time 1:00pm
+                            .description Expo (Parents and Guests Invited!)
+                        li.item
+                            h6.time 3:30pm
+                            .description Closing Ceremony
+                        li.item
+                            h6.time 4:30pm
+                            .description HackTJ Concludes
+
+            //- .animation-container.horizontal.sponsors
+            //-     .animated.left
+            //- 
+            //- a.anchor#team
+            //- section.team
+            //-     .container
+            //-         .animation-container.vertical.top.right.extra-right.extra-height
+            //-             .animated
+            //-         h1.section-title Meet the Team
+            //-         div.team-pictures
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Sherry Xie
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Reilly McBride
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Justin Zhou
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Rohan Chaturvedula
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Andrew Wang
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Varun Gannavarapu
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Sarah Wang
+            //-             //-
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Niharika Vattikonda
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Katie Zhang
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Rae Moar
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Rachel Naidich
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Iman
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Kavya
+            //-             figure(class="fade" title="Caption")
+            //-                 img(src="/img/favicon.png" alt="")
+            //-                 figcaption Sanjana
+            //-             -//
+
+            //- .animation-container.horizontal.sponsors
+            //-     .animated.right
+
+            a.anchor#maps
+            section.red.map
+                .map-container#map
+                .animation-container.vertical.top.left.extra-left
                     .animated
-                h1.section-title Schedule (TBD)
-                h1.section-title Last Year's Schedule
-                ul.day
-                    .day-title
-                        h3 Saturday, March 10
-                        .animation-container.horizontal.line-schedule
-                            .animated.left
-                    li.item
-                        h6.time 1:00pm
-                        .description Registration Opens
-                    li.item
-                        h6.time 2:00pm
-                        .description Opening Ceremony
-                    li.item
-                        h6.time 3:00pm
-                        .description Hacking Starts
-                    li.item
-                        h6.time 4pm-9pm
-                        .description Workshops
-                    li.item
-                        h6.time 6:30pm
-                        .description Dinner 
-                ul.day
-                    .day-title
-                        h3 Sunday, March 11
-                        .animation-container.horizontal.line-schedule
-                            .animated.left
-                    li.item
-                        h6.time 12:00am
-                        .description Midnight Snack
-                    li.item
-                        h6.time 7:30am
-                        .description Breakfast
-                    li.item
-                        h6.time 12:00pm
-                        .description Hacking Ends / Lunch
-                    li.item
-                        h6.time 1:00pm
-                        .description Expo (Parents and Guests Invited!)
-                    li.item
-                        h6.time 3:30pm
-                        .description Closing Ceremony
-                    li.item
-                        h6.time 4:30pm
-                        .description HackTJ Concludes
-        section.red.map
-            .map-container#map
-            .animation-container.vertical.top.left.extra-left
-                .animated
-            .animation-container.horizontal
-                .animated.left
-            .info-circle#map-info
-                .info-container
-                    h6 TJHSST
-                    .address 6560 Braddock Road
-                    .address Alexandria, VA
-                    a.button.small(href="https://www.google.com/maps/place/Thomas+Jefferson+High+School+for+Science+and+Technology/@38.8185004,-77.1708548,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b2e02877e895:0xc12f564af4d3bcab" target="_blank") 
-                        .text Get directions
-                        .icon.icon-caret-right
-        section.red.register
-            .container
-                //-.register-button-block.bottom
-                //-  a.button.register-button.mentor(href="/mentors", target="_blank") Request Mentor
-                .register-button-block.bottom
-                    //-button.register-button.mentor Register as a Volunteer or Mentor
-                        //-script(async src="//widgets.nvite.com/1.6/button.js" data-resource="3j7dml" data-class="nvite-button")
-                        //-script(async src="//widgets.nvite.com/1.1/button.js" data-resource="hacktjmentorvolunteers" data-class="nvite-button")
-                    
-                    .register-text Be sure to follow our Social Media pages for updates!
-                .social-links
-                    a.social.pe-so-twitter(target="_blank" href="https://twitter.com/HackTJOfficial")
-                    a.social.pe-so-facebook(target="_blank" href="https://facebook.com/HackTJOfficial")
-                    a.social.pe-so-instagram(target="_blank" href="https://instagram.com/hacktjofficial")
-    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWS7s6JVHNo0slACpRH7HR4HRWAWy78Do")
-    script(src="js/main.js" type="text/javascript")
-    //- script(src="js/sponsors.js" type="text/javascript")
+                .animation-container.horizontal
+                    .animated.left
+                .info-circle#map-info
+                    .info-container
+                        h6 TJHSST
+                        .address 6560 Braddock Road
+                        .address Alexandria, VA
+                        a.button.small(href="https://www.google.com/maps/place/Thomas+Jefferson+High+School+for+Science+and+Technology/@38.8185004,-77.1708548,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b2e02877e895:0xc12f564af4d3bcab" target="_blank") 
+                            .text Get directions
+                            .icon.icon-caret-right
+            section.red.register
+                .container
+                    //-.register-button-block.bottom
+                    //-  a.button.register-button.mentor(href="/mentors", target="_blank") Request Mentor
+                    .register-button-block.bottom
+                        //-button.register-button.mentor Register as a Volunteer or Mentor
+                            //-script(async src="//widgets.nvite.com/1.6/button.js" data-resource="3j7dml" data-class="nvite-button")
+                            //-script(async src="//widgets.nvite.com/1.1/button.js" data-resource="hacktjmentorvolunteers" data-class="nvite-button")
+                        
+                        .register-text Be sure to follow our Social Media pages for updates!
+                    .social-links
+                        a.social.pe-so-twitter(target="_blank" href="https://twitter.com/HackTJOfficial")
+                        a.social.pe-so-facebook(target="_blank" href="https://facebook.com/HackTJOfficial")
+                        a.social.pe-so-instagram(target="_blank" href="https://instagram.com/hacktjofficial")
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWS7s6JVHNo0slACpRH7HR4HRWAWy78Do")
+        script(src="js/main.js" type="text/javascript")

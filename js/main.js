@@ -2,10 +2,18 @@ var logos = "img/2017-sponsor-logos/";
 var partnerlogos = "img/partner-logos/";
 var smalllogos = "img/sponsor-logos-small/";
 
+
+
 addImages();
+setupNav();
 
 // window.location.reload(true)
 // Helpers
+function setupNav(){
+  var Sticky = new hcSticky('nav', {
+    stickTo: 'navcontainer'
+  });
+}
 function addImages(){
   var sponsordivs = document.getElementsByClassName("sponsor-container");
   var str = "";

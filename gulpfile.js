@@ -82,7 +82,7 @@ compiler.js = function() {
             upload.resolve();
         });
     var hackathon = when.defer();
-    gulp.src(['./js/hackathonsList.js','./js/hackathons.js'])
+    gulp.src(['./js/moment.js','./js/hackathonsList.js','./js/hackathons.js'])
         .pipe(minifyJS())
         .pipe(gulp.dest('./out/js'))
         .on('end', function(){
