@@ -4,7 +4,7 @@ window.hacktjMapStyles = [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#080938"
+                "color": "#0e1066"
             },
             {
                 "lightness": "42"
@@ -179,6 +179,9 @@ window.hacktjMapStyles = [
             },
             {
                 "visibility": "simplified"
+            },
+            {
+                "color":"#ffffff"
             }
         ]
     },
