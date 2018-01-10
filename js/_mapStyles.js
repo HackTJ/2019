@@ -1,9 +1,5 @@
 window.hacktjMapStyles = [
     {
-        elementType: 'labels.text.fill', 
-        stylers: [{color: '#FFFFFF'}]
-    },
-    {
         featureType: 'administrative.locality',
         elementType: 'labels.text.fill',
         stylers: [{color: '#FFFFFF'}]
