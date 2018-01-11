@@ -45,11 +45,15 @@ h1, h2, h3, h4, h5, h6{
 	font-size: $base-font-size;
 	font-weight: bold;
 	background-color: $hacktj-primary;
-	color: white;
+	color: white !important;
 	width: 100%;
 	min-height: 30px;
 	line-height: 30px;
 	padding: 10px;
+
+	a{
+		color: white;
+	}
 }
 
 /************************************
