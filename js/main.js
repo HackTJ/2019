@@ -2,8 +2,6 @@ var logos = "img/logos/";
 var partnerlogos = "img/logos2/";
 // var smalllogos = "img/sponsor-logos-small/";
 
-
-
 addImages();
 setupNav();
 

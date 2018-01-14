@@ -1,2 +1,2 @@
-var sponsorImages = ['appian.png', 'apt.png', 'big nerd ranch.png', 'bigparser.png', 'bizy.png', 'capital one.png', 'catapult.png', 'fannie mae.png', 'glorecontech.png', 'jabil kuatro.png', 'miner and kasch.png', 'mongodb.png', 'ntrepidlogo.png', 'palantir.png', 'phone 2 action.png', 'razorx2.png', 'yext.png'];
-var partnerImages = ['make school.png', 'mlh.png']
+var sponsorImages = ['R_ManTech Logo_5 inches EXTERNAL.jpg', 'balsamiq-logo.png', 'caci.png', 'Fannie Mae.png', 'Global Reconnaissance Technologies.png', 'horizonsLong.svg', 'microsoft.png', 'WGS Systems.jpg', 'Yext.png'];
+var partnerImages = ['mlh.png']

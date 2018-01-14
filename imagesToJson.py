@@ -1,11 +1,11 @@
 import os
 
-imgFolder = "./static/img/2017-sponsor-logos"
-partFolder = "./static/img/partner-logos"
+imgFolder = "./static/img/logos"
+partFolder = "./static/img/logos2"
 
 #Read all video files from input folder
-filedir = [f for f in os.listdir(imgFolder) if ".png" in f]
-partdir = [f for f in os.listdir(partFolder) if ".png" in f]
+filedir = [f for f in os.listdir(imgFolder) if f not in ".DS_Store"]
+partdir = [f for f in os.listdir(partFolder) if f not in ".DS_Store"]
 
 s = "var sponsorImages = " + str(filedir) + ";\n"
 s2 = "var partnerImages = " + str(partdir)
