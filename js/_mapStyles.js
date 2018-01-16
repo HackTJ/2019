@@ -1,15 +1,10 @@
 window.hacktjMapStyles = [
     {
-        featureType: 'administrative.locality',
-        elementType: 'labels.text.fill',
-        stylers: [{color: '#FFFFFF'}]
-    },
-    {
         "featureType": "all",
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#0e1066"
+                "color": "#080938"
             },
             {
                 "lightness": "42"
@@ -184,9 +179,6 @@ window.hacktjMapStyles = [
             },
             {
                 "visibility": "simplified"
-            },
-            {
-                "color":"#ffffff"
             }
         ]
     },
