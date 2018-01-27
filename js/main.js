@@ -16,12 +16,16 @@ function addImages(){
   var sponsordivs = document.getElementsByClassName("partner-container");
   var str = "";
   for(s in sponsorImages){
-    str += "<img src='"+ logos + sponsorImages[s] +"'></img>";
+    str += "<a href= 'http://" + sponsorImages[s][1] + "' target='_blank'>";
+    str += "<img src='"+ logos + sponsorImages[s][0] +"'></img>";
+    str += "</a>";
   }
   sponsordivs[0].innerHTML = str;
   str = "";
   for(s in partnerImages){
-    str += "<img src='"+ partnerlogos + partnerImages[s] +"'></img>";
+    str += "<a href= 'http://" + sponsorImages[s][1] + "' target='_blank'>";
+    str += "<img src='"+ partnerlogos + partnerImages[s][0] +"'></img>";
+    str += "</a>";
   }
   sponsordivs[1].innerHTML = str;
 }
