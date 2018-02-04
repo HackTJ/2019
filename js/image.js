@@ -9,4 +9,7 @@ var sponsorImages = [
   ['wgssystems.jpg', 'wgssystems.com'],
   ['joinhorizons.svg', 'joinhorizons.com'],
   ['microsoft.png', 'microsoft.com'] ];
-var partnerImages = [['mlh.png', 'mlh.io']]
+var partnerImages = [
+  ['mlh.png', 'mlh.io'],
+  ['tjpartnershipfund.jpg','tjpartnershipfund.org']
+]
