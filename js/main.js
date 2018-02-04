@@ -23,7 +23,7 @@ function addImages(){
   sponsordivs[0].innerHTML = str;
   str = "";
   for(s in partnerImages){
-    str += "<a href= 'http://" + sponsorImages[s][1] + "' target='_blank'>";
+    str += "<a href= 'http://" + partnerImages[s][1] + "' target='_blank'>";
     str += "<img src='"+ partnerlogos + partnerImages[s][0] +"'></img>";
     str += "</a>";
   }
