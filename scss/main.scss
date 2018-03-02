@@ -387,12 +387,12 @@ navcontainer{
 	width: 500px;
 	.register-text{
 		font-size: 20px;
-		width: 100%;
+		// width: 100%;
 		margin: auto;
 		display: block;
 		text-align: center;
 		@include respond-to("mobile"){
-			margin-left: 10px;
+			margin: 0 10px;
 		}
 	}
 	.register-button{
@@ -847,6 +847,7 @@ section.map{
 		top: 0;
 		left: 0;
 		@include respond-to("mobile"){
+			display: none;
 			position: relative;
 			width: 100%;
 			height: 60%;
@@ -856,6 +857,10 @@ section.map{
 		}
 	}
 	height: 60%;
+	@include respond-to("mobile"){
+		height: auto;
+		padding: 10px 0;
+	}
 	.animation-container.vertical{
 		height: 50%;
 		left: calc(50% - 400px);
@@ -919,6 +924,7 @@ section.map{
 
 section.register{
 	padding: 5px;
+	padding-top: 20px;
 	.container{
 		margin: 20px auto;
 		.register-button-block.bottom{
