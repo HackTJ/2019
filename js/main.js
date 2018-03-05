@@ -4,6 +4,7 @@ var partnerlogos = "img/logos2/";
 
 addImages();
 setupNav();
+initializeMap();
 
 // window.location.reload(true)
 // Helpers
@@ -120,7 +121,17 @@ for(var i=0; i<questions.length; i++){
   group.addEventListener("click", openQuestion(group, questions[i], answer))
 }
 
+
 function initializeMap() {
+  mapboxgl.accessToken = 'pk.eyJ1IjoibXNsZWUiLCJhIjoiclpiTWV5SSJ9.P_h8r37vD8jpIH1A6i1VRg#16';
+  var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mslee/cjeaiezorc7pe2rqqqwwobiqe', // stylesheet location
+      center: [-77.17, 38.818], // starting position [lng, lat]
+      zoom: 16  // starting zoom
+  });
+}
+  /*
   var hacktjStyle = new google.maps.StyledMapType(window.hacktjMapStyles, {name: "HackTJ Website"});
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -138,8 +149,8 @@ function initializeMap() {
     position: {lat: 38.818086, lng: -77.168323},
     map: map
   });
-}
-google.maps.event.addDomListener(window, 'load', initializeMap);
+  */
+// google.maps.event.addDomListener(window, 'load', initializeMap);
 
 // ScrollMagic Code
 if(!isMobile){
@@ -194,24 +205,3 @@ if(!isMobile){
           scrollController.destroy();
         });
 }
-
-function setImages(count){
-  var doneImages = [];
-  setTimeout(function(){
-    var popups = document.getElementsByClassName("nvite-card-name");
-    var images = Array.prototype.map.call(popups, function(popup){
-      if(doneImages.indexOf(popup.textContent) == -1){
-        var img = Array.prototype.filter.call(popup.parentNode.childNodes, function(sibling){
-          return sibling.nodeName === 'IMG';
-        })[0];
-        img.setAttribute('src', sponsorSmallImages[popup.textContent]);
-        doneImages.push(popup.textContent);
-      }
-      return img;
-    });
-    if(doneImages.length < Object.keys(sponsorSmallImages).length  && count < 10){
-      setImages(count+1);
-    }
-  }, 500);
-}
-// setImages(0);
